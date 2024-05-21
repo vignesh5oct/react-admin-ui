@@ -1,3 +1,32 @@
-.login{
-    
+.login {
+  margin-top: 150px;
+  
+  .title {
+    text-align: center;
+  }
+  .form {
+    .formData {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+
+      .formItems {
+        width: 20%;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+      }
+      button {
+        width: 10%;
+        padding: 5px;
+        margin: 10px;
+        align-items: center;
+      }
+    }
+    p{
+      text-align: center;
+      cursor: pointer;
+    }
+  }
 }

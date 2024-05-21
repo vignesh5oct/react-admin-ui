@@ -6,6 +6,7 @@ import app from "../../assests/app.svg"
 import expand from "../../assests/expand.svg"
 import notification from "../../assests/notifications.svg"
 import settings from "../../assests/setting.svg"
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -27,7 +28,9 @@ const Navbar = () => {
           <img className='icon' alt='setting' src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg" />
           <span>Name</span>
         </div>
-        <img className='icon' alt='ex' src={settings} />
+        <Link to={"/login"}>
+          <img className='icon' alt='ex' src={settings} />
+        </Link>
       </div>
     </div>
   )
