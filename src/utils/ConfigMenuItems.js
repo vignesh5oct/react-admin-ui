@@ -73,7 +73,7 @@ export const menuItems = [
       {
         id: 2,
         title: "Notes",
-        url: "/",
+        url: "/notes",
         icon: `${note}`,
       },
       {

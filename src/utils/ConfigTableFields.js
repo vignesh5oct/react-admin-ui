@@ -6,7 +6,7 @@ export const usersColumns = [
   {
     field: 'avatar', headerName: 'Avatar', width: 100,
     renderCell: (params) => {
-      return <img alt='user' src={params.row.img || noavatar} />
+      return <img alt='user' src={params.row.image || noavatar} />
     }
   },
   {
@@ -33,12 +33,12 @@ export const usersColumns = [
     headerName: "Phone",
     width: 200,
   },
-  {
-    field: "createdAt",
-    headerName: "Created At",
-    width: 200,
-    type: "string",
-  },
+  // {
+  //   field: "createdAt",
+  //   headerName: "Created At",
+  //   width: 200,
+  //   type: "string",
+  // },
   {
     field: "verified",
     headerName: "Verified",

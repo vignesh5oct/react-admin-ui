@@ -8,6 +8,7 @@ import Navbar from './components/navbar/Navbar';
 import Menu from './components/menu/Menu'
 import Footer from './components/footer/Footer';
 import Login from './pages/login/Login';
+import Todo from './pages/notes/Todo';
 
 function App() {
 
@@ -52,6 +53,10 @@ function App() {
     {
       path:"/login",
       element:<Login/>
+    },
+    {
+      path:"/notes",
+      element:<Todo/>
     }
 
   ])
