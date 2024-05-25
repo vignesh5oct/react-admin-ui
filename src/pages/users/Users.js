@@ -3,11 +3,12 @@ import "./users.scss"
 import DataTable from '../../components/dataTable/DataTable'
 import { usersColumns } from '../../utils/ConfigTableFields'
 import { userRows } from '../../utils/ConfigTableData'
+import Add from '../../components/add/Add'
 
 const Users = () => {
 
   const [users, setUsers] = useState([]);
-
+  const [open, setOpen] = useState(false);
   // const userData = users?.map((user)=>user.email)
 
 
@@ -29,17 +30,13 @@ const Users = () => {
     <div className='users'>
       <div className='info'>
         <h1>Users</h1>
-        <button>Add Users</button>
+        <button onClick={() => setOpen(true)}>Add Users</button>
       </div>
 
-      {users?.map((user) => (
-        <div>
 
-
-        </div>
-      ))}
+      
       <DataTable slug="users" columns={usersColumns} rows={users} />
-      {/* <DataTable slug="users" columns={usersColumns} rows={userRows} /> */}
+      {open && <Add slug="users" columns={usersColumns} setOpen={setOpen} />}
     </div>
   )
 }

@@ -39,10 +39,57 @@ export const usersColumns = [
   //   width: 200,
   //   type: "string",
   // },
-  {
-    field: "verified",
-    headerName: "Verified",
-    width: 150,
-    type: "boolean",
-  },
+  // {
+  //   field: "verified",
+  //   headerName: "Verified",
+  //   width: 150,
+  //   type: "boolean",
+  // },
 ];
+
+export const productsColumns = [
+  { field: 'id', headerName: 'ID', width: 90 },
+  {
+    field: 'thumbnail', headerName: 'Product', width: 100,
+    renderCell: (params) => {
+      return <img alt='user' src={params.row.thumbnail || noavatar} />
+    }
+  },
+  {
+    field: 'title',
+    headerName: 'Name',
+    width: 150,
+    editable: true,
+  },
+  {
+    field: 'price',
+    headerName: 'Price',
+    width: 150,
+    editable: true,
+  },
+  {
+    field: "stock",
+    type: "string",
+    headerName: "Stocks",
+    width: 200,
+  },
+  {
+    field: "availabilityStatus",
+    type: "string",
+    headerName: "Availability",
+    width: 200,
+  },
+  // {
+  //   field: "createdAt",
+  //   headerName: "Created At",
+  //   width: 200,
+  //   type: "string",
+  // },
+  // {
+  //   field: "verified",
+  //   headerName: "Verified",
+  //   width: 150,
+  //   type: "boolean",
+  // },
+];
+
